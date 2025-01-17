@@ -207,7 +207,7 @@ func (c *Cursor) Listen(line []rune, pos int, key rune) ([]rune, int, bool) {
 	case 0: // empty
 	case KeyEnter:
 		return []rune(c.Get()), c.Position, false
-	case KeyBackspace, KeyCtrlH:
+	case KeyBackspace, KeyCtrlH, KeyCtrlW:
 		if c.erase {
 			c.erase = false
 			c.Replace("")

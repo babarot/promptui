@@ -11,6 +11,12 @@ var (
 	// KeyCtrlH is the key for deleting input text.
 	KeyCtrlH rune = readline.CharCtrlH
 
+	// KeyCtrlW is the key for deleting input words.
+	KeyCtrlW rune = readline.CharCtrlW
+
+	// // KeyCtrlA is the key for moving cursor to a head.
+	// KeyCtrlW rune = readline.CharCtrlW
+
 	// KeyPrev is the default key to go up during selection.
 	KeyPrev        rune = readline.CharPrev
 	KeyPrevDisplay      = "↑"
